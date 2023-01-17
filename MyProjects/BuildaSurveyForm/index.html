@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Do you think I am a web-developer?</h1>
+
+      <p class="description" id="description">Thank you for taking the time to evaluate me!</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label id="name-label" for="name"
+          >Name
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            placeholder="Enter your name"
+        /></label>
+
+        <label id="email-label" for="email"
+          >Email
+          <input
+            id="email"
+            type="email"
+            name="email"
+            required
+            placeholder="Enter your Email"
+        /></label>
+
+        <label id="number-label" for="number"
+          >Age (optional)
+          <input
+            id="number"
+            type="number"
+            name="number"
+            min="1"
+            max="120"
+            placeholder="Age"
+        /></label>
+
+        <p>How many years of experience do you have?</p>
+        <select id="dropdown" name="describes">
+          <option disabled selected value="select one">Select one</option>
+          <option value="1">0-3</option>
+          <option value="2">3-6</option>
+          <option value="3">6-10</option>
+          <option value="4">More Than 10</option>
+        </select>
+
+        <p>Which one is your favorite?</p><label  class="rc"
+          ><input
+            
+            type="radio"
+            name="favorite"
+            value="html"
+          />HTML</label><label class="rc"
+          ><input  type="radio" name="favorite" value="css" />CSS</label
+        ><label  class="rc"
+          ><input
+            
+            type="radio"
+            name="favorite"
+            value="javascript"
+          />JavaScript</label
+        ><p>What is your recommendation to me according this survey?</p>
+        <label  class="rc"
+          ><input
+            
+            type="radio"
+            name="recommend"
+            value="html"
+          />HTML</label
+        ><label  class="rc"
+          ><input
+            
+            type="radio"
+            name="recommend"
+            value="css"
+          />CSS</label
+        ><label  class="rc"
+          ><input
+            
+            type="radio"
+            name="recommend"
+            value="javascript"
+          />JavaScript</label
+        ><p>What should I improve according this survey?</p>
+        <label class="rc"
+          ><input type="checkbox" name="label" value="label" />Label</label
+        >
+        <label class="rc"
+          ><input type="checkbox" name="input" value="input" />Input</label
+        >
+        <label class="rc"
+          ><input type="checkbox" name="select" value="select" />Select</label
+        >
+        <label class="rc"
+          ><input type="checkbox" name="option" value="option" />Option</label
+        ><p>Write your feedback according this survey?</p>
+        <textarea
+          id="feedback"
+          name="feedback"
+          rows="2"
+          cols="2"
+          placeholder="Enter your feedback here..."
+        ></textarea><button id="submit" type="submit" value="Submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
